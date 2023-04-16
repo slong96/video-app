@@ -1,0 +1,12 @@
+{% extends 'video_collection/base.html' %}
+
+{% block content %}
+
+
+<h2>Video Details Page</h2>
+
+<h1>{{ details.name }}</h1>
+<p>{{ details.notes }}</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{details.video_id}}" frameborder="0" allowfullscreen></iframe>
+
+{% endblock %}
